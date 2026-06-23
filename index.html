@@ -97,12 +97,12 @@
   }
 
   .hero-inner {
-    max-width: 1050px;
+    max-width: 1000px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: 56px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
     width: 100%;
   }
 
@@ -135,9 +135,9 @@
     font-size: 17px;
     line-height: 1.7;
     color: rgba(250, 250, 248, 0.75);
-    margin-bottom: 36px;
-    max-width: 480px;
-  }
+    margin: 0 auto 36px auto;
+    max-width: 600px;
+  } 
 
   .hero-sub strong {
     color: var(--branco);
@@ -599,16 +599,16 @@
 <!-- HERO -->
 <section class="hero">
   <div class="hero-inner">
-    <div class="hero-text">
-      <p class="hero-eyebrow">Direito trabalhista bancário</p>
-      <h1 class="hero-headline">Você acorda cansado antes mesmo de <em>começar o dia.</em></h1>
-      <p class="hero-sub">Sente que o trabalho tomou tudo — sua saúde, seu tempo, quem você era. <strong>O que você está sentindo tem nome. E você tem direitos.</strong></p>
-      <a class="btn-primary" href="#checklist">Quero entender meus direitos</a>
-    </div>
-    <div class="hero-photo">
-      <img src="perfil.png.png" alt="Foto de Perfil" style="width: 100%; max-width: 480px; height: auto; border-radius: 16px; box-shadow: 0 8px 24px rgba(26, 39, 68, 0.15);">
-    </div>
-</div>
+        <div class="hero-photo" style="width: 100%; margin-bottom: 24px;">
+          <img src="perfil.png.png" alt="Foto de Perfil" style="width: 100%; height: 380px; object-fit: cover; object-position: center; border-radius: 20px; box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);">
+        </div>
+        <div class="hero-text">
+          <p class="hero-eyebrow">Direito trabalhista bancário</p>
+          <h1 class="hero-headline">Você acorda cansado antes mesmo de <em>começar o dia.</em></h1>
+          <p class="hero-sub">Sente que o trabalho tomou tudo — sua saúde, seu tempo, quem você era. <strong>O que você está sentindo tem nome. E você tem direitos.</strong></p>
+          <a class="btn-primary" href="#checklist">Quero entender meus direitos</a>
+        </div>
+      </div>
 </section>
 
 <!-- CHECKLIST -->
